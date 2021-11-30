@@ -14,18 +14,68 @@ img {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
 .flex1 {
     flex: 1;
 }
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .mr40 {
     margin-right: 40px;
 }
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mb14 {
+    margin-bottom: 14px;
+}
+
+.p40 {
+    padding: 40px;
+}
+
 .dark-grey {
     color: #3c3e41;
 }
 
 .lighter-grey {
     color: #696f79;
+}
+
+.color-pink {
+    color: #f9004d;
 }
 
 .main-image {
@@ -108,14 +158,116 @@ img {
     width: 21px;
     text-align: center;
 }
+
 .right-side {
     margin-left: 50px;
 }
+
 .right-side .short-info h5 {
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 0;
 }
+
 .right-side .short-info p {
     margin-top: 8px;
+}
+
+.content-container.card-container {
+    padding: 40px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #3c3e41;
+    padding: 40px;
+    text-align: center;
+}
+
+.nav-container a:hover {
+    background: #ff014f;
+    color: white;
+    border-radius: 12px;
+}
+
+.about-me img {
+    border-radius: 12px;
+}
+
+.about-me .text-side p:first-child {
+    color: #f9004d;
+    text-transform: uppercase;
+}
+
+.about-me .text-side p {
+    line-height: 28px;
+}
+
+.about-me button {
+    text-transform: uppercase;
+    color: #f9004d;
+    margin-top: 20px;
+    border: none;
+    padding: 24px 33px;
+    border-radius: 8px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+    background: linear-gradient(145deg, #e2e8ec, #fff);
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+}
+
+.about-me button:hover {
+    top: -5px;
+    color: white;
+    background: #f9004d;
+}
+
+.doing-box {
+    margin-top: 50px;
+}
+
+.about-side .doing-box .card {
+    border-radius: 13px;
+    padding: 35px 20px;
+    text-align: center;
+    border: 1px solid #00000040;
+    margin-top: 20px;
+}
+
+.about-side .doing-box .card svg {
+    width: 50px;
+    height: 50px;
+    stroke-width: 1px;
+}
+
+.about-side .our-clients .card {
+    background: linear-gradient(145deg, #e2e8ec, #fff);
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 128px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.about-side .our-clients .card .line {
+    height: 1px;
+    background: #7c838e;
+    width: 100%;
+}
+
+.about-side .our-clients .card a {
+    margin: 12px 0 4px 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+.about-side .our-clients .card a:hover {
+    color: #f9004d;
+}
+
+.about-side .our-clients .card img {
+    padding: 27px 0 27px;
 }
