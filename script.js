@@ -1,52 +1,23 @@
-const aboutBtn = document.getElementById("about")
-const aboutSide = document.getElementById("about-side")
-const resumeBtn = document.getElementById("resume")
-const resumeSide = document.getElementById("resume-side")
-const workBtn = document.getElementById("work")
-const workSide = document.getElementById("work-side")
-const blogBtn = document.getElementById("blog")
-const blogSide = document.getElementById("blog-side")
-const contactBtn = document.getElementById("contact")
+let allSideMenuBtn = document.querySelectorAll(".nav-container a")
 
-window.onload = (event) => {
-    aboutSide.style.display = 'none'
-    workSide.style.display = "none"
-    resumeSide.style.display = "none"
-    blogSide.style.display = 'flex'
-};
 
-aboutBtn.onclick = () => {
-    cleanActiveClass()
-    aboutBtn.classList.add("active")
-    aboutSide.style.display = 'flex'
-    resumeSide.style.display = "none"
-    workSide.style.display = "none"
-    blogSide.style.display = 'none'
+if (allSideMenuBtn.length > 0) {
+    allSideMenuBtn.forEach(btn => {
+        btn.onclick = () => {
+            cleanActiveClass()
+            hideAllBlocks()
+            btn.classList.add("active")
+            let dataBlockId = btn.getAttribute("data-blockId")
+            document.getElementById(`${dataBlockId}`).classList.add("active")
+        }
+    })
 }
-resumeBtn.onclick = () => {
-    cleanActiveClass()
-    resumeBtn.classList.add("active")
-    aboutSide.style.display = 'none'
-    resumeSide.style.display = "flex"
-    workSide.style.display = "none"
-    blogSide.style.display = 'none'
-}
-workBtn.onclick = () => {
-    cleanActiveClass()
-    workBtn.classList.add("active")
-    aboutSide.style.display = 'none'
-    resumeSide.style.display = "none"
-    workSide.style.display = "flex"
-    blogSide.style.display = 'none'
 
-}
-blogBtn.onclick = () => {
-    cleanActiveClass()
-    blogBtn.classList.add("active")
-    blogSide.style.display = 'flex'
-    aboutSide.style.display = 'none'
-    resumeSide.style.display = "none"
-    workSide.style.display = "none"
+function hideAllBlocks() {
+    let allContentBlock = document.querySelectorAll(".blocks")
+    allContentBlock.forEach(el => {
+        el.classList.remove("active")
+    })
 }
 
 function cleanActiveClass() {

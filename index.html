@@ -61,17 +61,17 @@
     <div>
         <div class="d-flex side-block">
             <div class="nav-container flex1 card-container mt50 mr40 d-flex column">
-                <a class="active" id="about">About</a>
-                <a id="resume">Resume</a>
-                <a id="work">Work</a>
-                <a id="blog">Blog</a>
-                <a id="contact">Contact</a>
+                <a class="active" id="about" data-blockId="about-side">About</a>
+                <a id="resume" data-blockId="resume-side">Resume</a>
+                <a id="work" data-blockId="work-side">Work</a>
+                <a id="blog" data-blockId="blog-side">Blog</a>
+                <a id="contact" data-blockId="contact-side">Contact</a>
             </div>
         </div>
     </div>
     <div class="d-flex main-block">
         <div class="content-container flex4 mt50 card-container">
-            <div class="about-side d-flex column" id="about-side">
+            <div class="about-side d-flex column blocks active" id="about-side">
                 <div class="about-me d-flex align-center">
                     <div class="flex1 mr40">
                         <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="resume-side" id="resume-side">
+            <div class="resume-side blocks" id="resume-side">
                 <div class="mr20 mb40 ">
                     <div class="resume-card mb40">
                         <span class="color-pink">2007 - 2010</span>
@@ -250,7 +250,7 @@
                     </div>
                 </div>
             </div>
-            <div class="work-side d-flex column" id="work-side">
+            <div class="work-side d-flex column blocks" id="work-side">
                 <div class="d-flex mb20">
                     <div class="work-card d-flex column mr20">
                         <div class="work-img">
@@ -358,7 +358,7 @@
                     </div>
                 </div>
             </div>
-            <div class="blog-side d-flex column" id="blog-side">
+            <div class="blog-side d-flex column blocks" id="blog-side">
                 <div class="d-flex mb20">
                     <div class="work-card d-flex column mr20">
                         <div class="work-img">
@@ -464,6 +464,59 @@
                         </h3>
 
                     </div>
+                </div>
+            </div>
+            <div class="contact-side d-flex blocks" id="contact-side">
+                <div class="contact-box flex2 mr40">
+                    <div>
+                        <img src="https://inbio-react.netlify.app/static/5930a183f9be0c913e9d25b1318416f9/3a710/contact1.webp"
+                             alt="hands">
+                    </div>
+                    <h3 class="dark-grey">Nevine Acotanza</h3>
+                    <span>Chief Operating Officer</span>
+                    <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                    <p>Phone: <span>+01234567890</span></p>
+                    <p>Email: <span>admin@example.com</span></p>
+                    <p>FIND WITH ME</p>
+                    <div class="header-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="form-box flex3">
+                    <form>
+                        <div class="d-flex between mb20">
+                            <div class="d-flex column with48">
+                                <label class="dark-grey">YOUR NAME</label>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="d-flex column with48">
+                                <label class="dark-grey">PHONE NUMBER</label>
+                                <input type="text" name="pone">
+                            </div>
+                        </div>
+                        <div class="d-flex column mb20">
+                            <label class="dark-grey">EMAIL</label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="d-flex column mb20">
+                            <label class="dark-grey">SUBJECT</label>
+                            <input type="text" name="subject">
+                        </div>
+                        <div class="d-flex column mb20">
+                            <label class="dark-grey">YOUR MESSAGE</label>
+                            <textarea type="text" name="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="d-flex align-center"><span>SEND MESSAGE</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
