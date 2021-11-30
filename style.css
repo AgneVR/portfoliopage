@@ -22,7 +22,9 @@ img {
 .align-center {
     align-items: center;
 }
-
+.justify-center {
+    justify-content: center;
+}
 .between {
     justify-content: space-between;
 }
@@ -434,4 +436,9 @@ img {
 
 .blocks.active {
     display: flex;
+}
+footer img {
+    margin: 0 auto;
+    display: flex;
+    width: 36%;
 }
