@@ -93,7 +93,9 @@ img {
     color: #f9004d;
 }
 .active {
-    background: red;
+    background: #ff014f;
+    color: white;
+    border-radius: 12px;
 }
 
 .main-image {
