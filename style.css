@@ -456,53 +456,81 @@ footer img {
     overflow: visible;
     padding: 3px;
 }
+
 .progress-bar {
     display: flex;
     height: 100%;
     background: linear-gradient(
-    145deg,#fff 0, #f9004d 100%);
+            145deg, #fff 0, #f9004d 100%);
     border-radius: 14px;
 }
+
 .one {
     width: 95%;
 }
+
 .two {
     width: 85%;
 }
+
 .three {
     width: 60%;
 }
 
 .four {
-    width:70%;
+    width: 70%;
 }
+
 .five {
-    width:90%;
+    width: 90%;
 }
+
 .resume-side h6, span {
     letter-spacing: 2px;
     font-weight: 400;
     font-size: 12px;
 }
+
 .resume-side h6 {
     margin-bottom: 14px;
     margin-top: 36px;
 }
+
 .bgDark {
     background: #1d1e24;
     color: white;
 }
+
 .bgDarkBlocks {
-    background: #212428;
-    color: white;
-    box-shadow: 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e;
+    background: #212428 !important;
+    color: white !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
 }
+
 .btnDarkBg {
-    background: linear-gradient(to right bottom,#212428,#16181c);
-    box-shadow: 10px 10px 19px #1c1e22,-10px -10px 19px #262a2e;
-    color: white;
+    background: linear-gradient(to right bottom, #212428, #16181c) !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+    color: white !important;
 }
 
 .whiteA {
     color: white !important;
+}
+
+.colorLight {
+    color: #c4cfde;
+}
+
+.btnDarkBgPink {
+    background: linear-gradient(to right bottom, #212428, #16181c) !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+    color: #ff014f !important;
+}
+
+.darkInput {
+    background-color: #191b1e !important;
+    border: 2px solid #191b1e !important;
+    border-radius: 6px !important;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px hsla(0, 0%, 100%, 0.2) inset !important;
+    color: #c4cfde !important;
 }
