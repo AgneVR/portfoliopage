@@ -1,6 +1,32 @@
 const tryDark = document.querySelector(".try-dark")
 let allSideMenuBtn = document.querySelectorAll(".nav-container a")
 
+let modal = document.querySelector(".modal")
+let spanClose = document.querySelectorAll(".close")
+spanClose.forEach(el => {
+    el.onclick = () => {
+        modal.style.display = "none"
+    }
+})
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+function modalWorkCard() {
+    let workCard = document.querySelectorAll(".work-card")
+    let modal = document.querySelector(".modal")
+    workCard.forEach(el => {
+        el.onclick = () => {
+            modal.style.display = "flex"
+        }
+    })
+}
+ modalWorkCard()
+
 tryDark.onclick = () => {
     let bodySelect = document.querySelector("body")
     bodySelect.classList.toggle("bgDark")
