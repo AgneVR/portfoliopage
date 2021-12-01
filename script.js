@@ -1,5 +1,41 @@
+const tryDark = document.querySelector(".try-dark")
 let allSideMenuBtn = document.querySelectorAll(".nav-container a")
 
+tryDark.onclick = () => {
+    let bodySelect = document.querySelector("body")
+    bodySelect.classList.toggle("bgDark")
+    darkCardBg()
+    darkBtn()
+    workCardBgChange()
+    allAtagWhite()
+}
+function darkCardBg() {
+    let changeBg = document.querySelectorAll(".card-container")
+    changeBg.forEach(el => {
+        el.classList.toggle("bgDarkBlocks")
+    })
+}
+
+function allAtagWhite() {
+    let aTag = document.querySelectorAll("a")
+    aTag.forEach(el => {
+        el.classList.toggle("whiteA")
+    })
+}
+
+function workCardBgChange() {
+    let workCard = document.querySelectorAll(".work-card")
+    workCard.forEach(el => {
+        el.classList.toggle("bgDarkBlocks")
+    })
+}
+
+function darkBtn() {
+    let btnDark = document.querySelectorAll(".btnDark")
+    btnDark.forEach(btn => {
+        btn.classList.toggle("btnDarkBg")
+    })
+}
 
 if (allSideMenuBtn.length > 0) {
     allSideMenuBtn.forEach(btn => {
