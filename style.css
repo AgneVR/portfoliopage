@@ -510,7 +510,7 @@ footer img {
     display: none;
     overflow: hidden;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -763,52 +763,78 @@ footer img {
     .about-me .noMargin {
         margin: 0;
     }
+
     .about-me .text-side {
         justify-content: center;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .work-side .work-card, .blog-side .work-card {
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .container {
         margin: 0 110px;
     }
 }
+
 @media only screen and (max-width: 700px) {
     .container {
         margin: 0 100px;
     }
+
+    .modal-content img {
+        width: 23%;
+    }
+
+    .modal-content {
+        flex-direction: column;
+    }
+
+    .modal-content a {
+        padding: 14px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .modal-content svg {
+        display: none;
+    }
 }
+
 @media only screen and (max-width: 600px) {
     .container {
         margin: 0 30px;
     }
+
     .nav-container {
         flex-wrap: wrap;
     }
+
     .nav-container a {
         font-size: 13px;
         padding: 14px;
         margin: 3px;
     }
+
     .side-block {
         height: auto;
     }
+
     .nav-container button {
         margin: 0;
         padding: 17px;
         font-size: 10px;
     }
-    .modal-content img {
-        display: none;
-    }
+
 }
-@media only screen and (max-width: 450px){
-    .upper-block .right-side{
+
+@media only screen and (max-width: 450px) {
+    .upper-block .right-side {
         flex-direction: column;
     }
 }
