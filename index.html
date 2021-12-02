@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
@@ -74,7 +75,7 @@
         <div class="content-container flex4 mt50 card-container">
             <div class="about-side d-flex column blocks active changeBg" id="about-side">
                 <div class="about-me d-flex align-center">
-                    <div class="flex1 mr40">
+                    <div class="flex1 mr40 noMargin">
                         <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                              alt="women photo">
                     </div>
@@ -117,7 +118,7 @@
                 </div>
                 <div class="doing-box d-flex column">
                     <h3 class="dark-grey text-center">What I am Doing</h3>
-                    <div class="d-flex">
+                    <div class="d-flex doing-media">
                         <div class="flex1 card mr40 darkTheme">
                             <svg class="color-pink icon" xmlns="http://www.w3.org/2000/svg" width="50" height="24"
                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -149,7 +150,7 @@
                 </div>
                 <div class="our-clients">
                     <h3 class="dark-grey text-center mt50">Our trusted Clients</h3>
-                    <div class="d-flex">
+                    <div class="d-flex cards">
                         <div class="card mr40 d-flex column darkTheme">
                             <img src="https://inbio-react.netlify.app/static/f60ed605fd12e097aac6d9f93d7a2702/1e15b/brand-04.webp"
                             >
@@ -178,9 +179,9 @@
                 </div>
             </div>
             <div class="resume-side blocks d-flex column" id="resume-side">
-                <div>
-                    <div class="d-flex">
-                        <div class="resume-card">
+                <div class="d-flex mediaCol">
+                    <div class="d-flex column">
+                        <div class="resume-card mb40">
                             <span class="color-pink">2007 - 2010</span>
                             <h2 class="main-title dark-grey">Education Quality</h2>
                             <div class="box mr20 darkTheme">
@@ -200,6 +201,25 @@
                             </div>
                         </div>
                         <div class="resume-card mb40">
+                            <div class="box mr20 darkTheme">
+                                <div class="d-flex align-center between">
+                                    <div class="mr40">
+                                        <h4 class="dark-grey">Personal Portfolio April Fools</h4>
+                                        <span class="lighter-grey">University of DVI (1997 - 2001)</span>
+                                    </div>
+                                    <div><span class="rating darkTheme">4.30/5</span></div>
+                                </div>
+                                <div class="line"></div>
+                                <p class="lighter-grey">The education should be very interactual. Ut tincidunt est ac
+                                    dolor
+                                    aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                    hendrerit
+                                    ante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex column">
+                        <div class="resume-card mb40">
                             <span class="color-pink">2007 - 2010</span>
                             <h2 class="main-title dark-grey">Job Experience</h2>
                             <div class="box darkTheme">
@@ -218,26 +238,8 @@
                                     ante.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex mb40 ">
-                        <div class="resume-card">
-                            <div class="box mr20 darkTheme">
-                                <div class="d-flex align-center between">
-                                    <div class="mr40">
-                                        <h4 class="dark-grey">Personal Portfolio April Fools</h4>
-                                        <span class="lighter-grey">University of DVI (1997 - 2001)</span>
-                                    </div>
-                                    <div><span class="rating darkTheme">4.30/5</span></div>
-                                </div>
-                                <div class="line"></div>
-                                <p class="lighter-grey">The education should be very interactual. Ut tincidunt est ac
-                                    dolor
-                                    aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                    hendrerit
-                                    ante.</p>
-                            </div>
-                        </div>
-                        <div class="resume-card">
+
+                        <div class="resume-card mb40">
                             <div class="box darkTheme">
                                 <div class="d-flex align-center between">
                                     <div class="mr40">
@@ -256,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex between">
+                <div class="d-flex between mediaCol">
                     <div class="flex1">
                         <span class="color-pink">FEATURES</span>
                         <h2 class="main-title dark-grey">Design Skill</h2>
@@ -358,25 +360,8 @@
                 </div>
             </div>
             <div class="work-side d-flex column blocks" id="work-side">
-                <div class="d-flex mb20">
-                    <div class="work-card d-flex column mr20">
-                        <div class="work-img">
-                            <img src="https://inbio-react.netlify.app/static/57ab87af87223d70a70d396075f46c8c/d0f18/portfolio-01.webp"
-                                 alt="">
-                        </div>
-                        <div class="d-flex between align-center">
-                            <p class="color-pink font12">DEVELOPMENT</p>
-                            <div>
-                                <i class="far fa-heart lighter-grey font12"></i>
-                                <span class="lighter-grey font12">600</span>
-                            </div>
-                        </div>
-                        <h3>
-                            <a href="#">The services provide for design</a>
-                        </h3>
-
-                    </div>
-                    <div class="work-card d-flex column mr20">
+                <div class="d-flex mb20 wrap justify-center">
+                    <div class="work-card d-flex column">
                         <div class="work-img">
                             <img src="https://inbio-react.netlify.app/static/57ab87af87223d70a70d396075f46c8c/d0f18/portfolio-01.webp"
                                  alt="">
@@ -410,9 +395,7 @@
                         </h3>
 
                     </div>
-                </div>
-                <div class="d-flex">
-                    <div class="work-card d-flex column mr20">
+                    <div class="work-card d-flex column">
                         <div class="work-img">
                             <img src="https://inbio-react.netlify.app/static/57ab87af87223d70a70d396075f46c8c/d0f18/portfolio-01.webp"
                                  alt="">
@@ -429,7 +412,24 @@
                         </h3>
 
                     </div>
-                    <div class="work-card d-flex column mr20">
+                    <div class="work-card d-flex column">
+                        <div class="work-img">
+                            <img src="https://inbio-react.netlify.app/static/57ab87af87223d70a70d396075f46c8c/d0f18/portfolio-01.webp"
+                                 alt="">
+                        </div>
+                        <div class="d-flex between align-center">
+                            <p class="color-pink font12">DEVELOPMENT</p>
+                            <div>
+                                <i class="far fa-heart lighter-grey font12"></i>
+                                <span class="lighter-grey font12">600</span>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">The services provide for design</a>
+                        </h3>
+
+                    </div>
+                    <div class="work-card d-flex column">
                         <div class="work-img">
                             <img src="https://inbio-react.netlify.app/static/57ab87af87223d70a70d396075f46c8c/d0f18/portfolio-01.webp"
                                  alt="">
@@ -466,30 +466,13 @@
                 </div>
             </div>
             <div class="blog-side d-flex column blocks" id="blog-side">
-                <div class="d-flex mb20">
-                    <div class="work-card d-flex column mr20">
+                <div class="d-flex mb20 wrap justify-center">
+                    <div class="work-card d-flex column">
                         <div class="work-img">
                             <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
                                  alt="">
                         </div>
-                        <div class="d-flex between align-center">
-                            <p class="color-pink font12">DEVELOPMENT</p>
-                            <div>
-                                <i class="far fa-clock lighter-grey font12"></i>
-                                <span class="lighter-grey font12">2 min read</span>
-                            </div>
-                        </div>
-                        <h3>
-                            <a href="#">The services provide for design</a>
-                        </h3>
-
-                    </div>
-                    <div class="work-card d-flex column mr20">
-                        <div class="work-img">
-                            <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
-                                 alt="">
-                        </div>
-                        <div class="d-flex between align-center">
+                        <div class="d-flex between align-center info-text">
                             <p class="color-pink font12">DEVELOPMENT</p>
                             <div>
                                 <i class="far fa-clock lighter-grey font12"></i>
@@ -506,43 +489,7 @@
                             <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
                                  alt="">
                         </div>
-                        <div class="d-flex between align-center">
-                            <p class="color-pink font12">DEVELOPMENT</p>
-                            <div>
-                                <i class="far fa-clock lighter-grey font12"></i>
-                                <span class="lighter-grey font12">2 min read</span>
-                            </div>
-                        </div>
-                        <h3>
-                            <a href="#">The services provide for design</a>
-                        </h3>
-
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <div class="work-card d-flex column mr20">
-                        <div class="work-img">
-                            <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
-                                 alt="">
-                        </div>
-                        <div class="d-flex between align-center">
-                            <p class="color-pink font12">DEVELOPMENT</p>
-                            <div>
-                                <i class="far fa-clock lighter-grey font12"></i>
-                                <span class="lighter-grey font12">2 min read</span>
-                            </div>
-                        </div>
-                        <h3>
-                            <a href="#">The services provide for design</a>
-                        </h3>
-
-                    </div>
-                    <div class="work-card d-flex column mr20">
-                        <div class="work-img">
-                            <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
-                                 alt="">
-                        </div>
-                        <div class="d-flex between align-center">
+                        <div class="d-flex between align-center info-text">
                             <p class="color-pink font12">DEVELOPMENT</p>
                             <div>
                                 <i class="far fa-clock lighter-grey font12"></i>
@@ -559,7 +506,58 @@
                             <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
                                  alt="">
                         </div>
-                        <div class="d-flex between align-center">
+                        <div class="d-flex between align-center info-text">
+                            <p class="color-pink font12">DEVELOPMENT</p>
+                            <div>
+                                <i class="far fa-clock lighter-grey font12"></i>
+                                <span class="lighter-grey font12">2 min read</span>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">The services provide for design</a>
+                        </h3>
+
+                    </div>
+                    <div class="work-card d-flex column">
+                        <div class="work-img">
+                            <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
+                                 alt="">
+                        </div>
+                        <div class="d-flex between align-center info-text">
+                            <p class="color-pink font12">DEVELOPMENT</p>
+                            <div>
+                                <i class="far fa-clock lighter-grey font12"></i>
+                                <span class="lighter-grey font12">2 min read</span>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">The services provide for design</a>
+                        </h3>
+
+                    </div>
+                    <div class="work-card d-flex column">
+                        <div class="work-img">
+                            <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
+                                 alt="">
+                        </div>
+                        <div class="d-flex between align-center info-text">
+                            <p class="color-pink font12">DEVELOPMENT</p>
+                            <div>
+                                <i class="far fa-clock lighter-grey font12"></i>
+                                <span class="lighter-grey font12">2 min read</span>
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="#">The services provide for design</a>
+                        </h3>
+
+                    </div>
+                    <div class="work-card d-flex column">
+                        <div class="work-img">
+                            <img src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp"
+                                 alt="">
+                        </div>
+                        <div class="d-flex between align-center info-text">
                             <p class="color-pink font12">DEVELOPMENT</p>
                             <div>
                                 <i class="far fa-clock lighter-grey font12"></i>
@@ -593,7 +591,7 @@
                 </div>
                 <div class="form-box flex3 darkTheme">
                     <form>
-                        <div class="d-flex between mb20">
+                        <div class="d-flex between mb20 mediaCol">
                             <div class="d-flex column with48">
                                 <label class="dark-grey">YOUR NAME</label>
                                 <input type="text" name="name">
