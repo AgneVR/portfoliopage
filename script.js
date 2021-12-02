@@ -9,7 +9,7 @@ spanClose.forEach(el => {
     }
 })
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -25,7 +25,8 @@ function modalWorkCard() {
         }
     })
 }
- modalWorkCard()
+
+modalWorkCard()
 
 tryDark.onclick = () => {
     let bodySelect = document.querySelector("body")
@@ -41,6 +42,21 @@ tryDark.onclick = () => {
     makeDarkTextArea()
     replaceOurClientsImg()
     replaceFooterImg()
+    modalContentDark()
+    modalBgDark()
+}
+function modalContentDark() {
+    let modalContent = document.querySelectorAll(".modal-content")
+    modalContent.forEach(el => {
+        el.classList.toggle("bgDarkBlocks")
+    })
+}
+
+function modalBgDark() {
+    let modalBg = document.querySelectorAll(".modal")
+    modalBg.forEach(el => {
+        el.classList.toggle("bgDark")
+    })
 }
 
 function darkCardBg() {
